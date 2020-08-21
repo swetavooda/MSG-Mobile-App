@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "292749521074",
+    "firebase_url": "https://hri7238.firebaseio.com",
+    "project_id": "hri7238",
+    "storage_bucket": "hri7238.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292749521074:android:c6afef5bdf82b70a9d99ab",
+        "android_client_info": {
+          "package_name": "com.android.practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMow-GZ_xjt4And8QT19UYE6vSxvfX6Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292749521074:android:5f1ef14e8a1ec26d9d99ab",
+        "android_client_info": {
+          "package_name": "org.nativescript.FirstApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMow-GZ_xjt4And8QT19UYE6vSxvfX6Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292749521074:android:0688f3afc7c47e809d99ab",
+        "android_client_info": {
+          "package_name": "org.nativescript.TeamA"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMow-GZ_xjt4And8QT19UYE6vSxvfX6Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292749521074-fd2f97a03f4gi959np5hh4ib6a4hhi41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

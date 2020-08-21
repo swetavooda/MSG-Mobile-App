@@ -1,0 +1,29 @@
+StackLayout{
+    background-color:lightgreen;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+
+}
+.subheading{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.coloring{
+    color: orange;
+    background-color: lightyellow;
+    padding-top: 20px;
+
+}
+.main_one{
+    color: white;
+    font-size: 25px;
+    padding-left: 130px;
+}
+.submit{
+    margin-top: 80px;
+
+}
+.m-t-20 m-b-10{
+    background-color: red;
+    height: 20%;
+}

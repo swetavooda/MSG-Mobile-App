@@ -1,0 +1,6 @@
+<ActionBar title="Weather App">
+</ActionBar>
+<FlexBoxLayout justifyContent="center" flexDirection="column" alignItems="stretch" width="400" height="300" background="white" style="border-radius: 40%;">
+    <TextField hint="Enter a valid city-name" [text]="name" style="font-size : 20 ;" (textChange)="onTextChange($event)"  width="250" height="50" color="black"></TextField>
+    <Button text="Get Weather" (tap)="onTap()" width="200" style="border-radius: 50%;"></Button>
+</FlexBoxLayout>

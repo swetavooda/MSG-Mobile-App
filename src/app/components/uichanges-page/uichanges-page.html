@@ -1,0 +1,53 @@
+<ActionBar title="UI changes Page">
+</ActionBar>
+<StackLayout>   
+    
+    <ListPicker [items]="crimetypes" selectedIndex="0" (selectedIndexChange)="onSelectedCrimeType($event)"></ListPicker>
+    <ListView [items]="buttons" class="list-group" *ngIf="buttons">     
+        <ng-template let-button="item">
+            <GridLayout [ngSwitch]="button.id">
+
+            <GridLayout *ngSwitchCase=1>
+                <StackLayout >                    
+                    <Label text="{{ button.name }}" textWrap="true"> </Label>
+                    <!-- <TextField hint="{{ button.description }}" color="orangered" backgroundColor="white"></TextField> -->
+                    <TextField color="orangered" backgroundColor="white"></TextField>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout *ngSwitchCase=2>
+                <StackLayout >
+                    <Label text="{{ button.name }}" textWrap="true"> </Label>
+                    <Button class="btn btn-primary" text="Camera"  ></Button>                    
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout *ngSwitchCase=3>
+                <StackLayout >                    
+                    <Label text="{{ button.name }}" textWrap="true"> </Label>
+                    <Label text="radio" textWrap="true"> </Label>
+                    <RadioGroup [(value)]="dataBoundVariable">
+                        <RadioButton text="Yes"></RadioButton>
+                        <RadioButton text="No"></RadioButton>                        
+                    </RadioGroup>                   
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout *ngSwitchCase=4>
+                <StackLayout >
+                    <Label text="{{ button.name }}" textWrap="true"> </Label>
+                    <Label text="{{ button.list }}" textWrap="true"> </Label>
+                    <!-- <ListView [items]="{{buttons.list}}" class="list-group" >
+                        <ng-template let-button="item">
+
+                        </ng-template> -->
+                    <!-- <ListPicker items="{{ button.list }}" ></ListPicker> -->
+                </StackLayout>
+            </GridLayout>
+
+            </GridLayout>
+        </ng-template>      
+
+    </ListView>
+    
+</StackLayout>

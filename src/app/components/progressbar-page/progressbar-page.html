@@ -1,0 +1,10 @@
+<ActionBar title="ProgressBar page">
+</ActionBar>
+<StackLayout id="hello">
+        <Label class="tittle" text="Demo for uploading image to FireBase"></Label>
+        <Label text="Image : Test.jpg"></Label>
+        <Label text="FireBase : Hri7238"></Label>
+        <Image [src]="path"></Image>
+        <Progress  *ngIf="check" [value]="percent" maxValue="100"></Progress>
+        <Button class="uploadButton" text="Upload" (tap)="uploadFile()"></Button>
+</StackLayout>

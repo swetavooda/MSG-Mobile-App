@@ -1,0 +1,19 @@
+<ActionBar title="Upload Data Page">
+</ActionBar>
+<StackLayout>
+    <Label class="main_one" text="BACKENDCONNECTIVITY"></Label>
+
+
+
+    <Label class="subheading" text="Name:"></Label>
+    <TextField class="coloring" hint="Enter Name" [(ngModel)]="name_details"></TextField>
+
+    <Label class="subheading" text="Email: "></Label>
+    <TextField class="coloring" hint="Enter Email Address" autocapitalizationType="none" autocorrect="false" [(ngModel)]="add_details"></TextField>
+
+    <Label class="subheading" text="password: "></Label>
+    <TextField  class="coloring" hint="Enter password" [(ngModel)]="pass_details"></TextField>
+
+
+    <Button class="submit" text="Submit" (tap)="uploadFile()"></Button>
+</StackLayout>
