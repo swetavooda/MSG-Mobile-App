@@ -10,6 +10,7 @@ import { ListPicker } from "tns-core-modules/ui/list-picker";
 @Component({
     selector: "uichanges-page",
     templateUrl: "uichanges-page.html",
+    styleUrls:["./uichanges-page.css"],
     moduleId: module.id,
 })
 /* export class ListPickerUsageComponent extends ButtonService{
@@ -26,7 +27,7 @@ import { ListPicker } from "tns-core-modules/ui/list-picker";
     }
 } */
 export class uichangespage{
-    
+
     public static numberOfButtons: number;
     buttons: Button[];
     errMess: string;
@@ -40,8 +41,8 @@ export class uichangespage{
               errmess => this.errMess = <any>errmess);
 
               console.log(this.buttons); */
-              }                          
-          
+              }
+
               public onSelectedCrimeType(args: EventData,) {
                   const picker = <ListPicker>args.object;
                   this.buttonService.getButtons(this.crimetypes[picker.selectedIndex])
@@ -49,14 +50,14 @@ export class uichangespage{
                         errmess => this.errMess = <any>errmess);
                   console.log(`index: ${picker.selectedIndex}; item" ${this.crimetypes[picker.selectedIndex]}`);
               }
-    
+
     /* refresh(String:case)
     {
         this.buttonService.getButtons(case)
             .subscribe(buttons => this.buttons = buttons,
               errmess => this.errMess = <any>errmess);
-        
-    } 
+
+    }
  */
 }
 

@@ -1,0 +1,31 @@
+.picker {
+    font-family:monospace;
+    font-style: italic;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:black;
+    border-radius: 2%;
+    width: 95%;
+    height:60;
+}
+.btn{
+    color: black;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+.ask{
+    margin-top: 10;
+    margin-bottom:10;
+    margin-left: 5;
+    color:red;
+    font-family: cursive;
+    font-size: 15%;
+}
+.input{
+    placeholder-color:gray;
+    margin-top: 15%;
+    border-radius: 10%;
+    padding-left: 5%;
+    width:90%;
+    align-items: center;
+}

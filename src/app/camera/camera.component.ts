@@ -16,7 +16,7 @@ import { Button } from '../shared/button';
     //styleUrls: ['./camera.component.css']
   })
   export class CameraComponent{
-    
+
     public static numberOfButtons: number;
     buttons: Button[];
     errMess: string;
@@ -37,7 +37,7 @@ import { Button } from '../shared/button';
             .subscribe(buttons => this.buttons = buttons,
               errmess => this.errMess = <any>errmess);
               }
-    
+
     openCam(args) {
         var milliseconds = (new Date).getTime();
         var that=this;
@@ -53,7 +53,7 @@ import { Button } from '../shared/button';
                                 const fileName = milliseconds+".png";
                                 const filePath = path.join(folderPath, fileName);
                                 const saved: boolean = imageSource.saveToFile(filePath, "png");
-                                
+
                                 that.myImage=filePath;
                                 if (saved) {
 
@@ -94,14 +94,14 @@ import { Button } from '../shared/button';
             () => alert('permissions rejected')
         );
     }
- 
+
     openMe()
     {
-        
+
         this.buttonService.getButtons()
       .subscribe(buttons => this.buttons = buttons,
         errmess => this.errMess = <any>errmess);
-        
-    } 
+
+    }
 
 }
