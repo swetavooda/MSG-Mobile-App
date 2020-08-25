@@ -27,7 +27,7 @@ export class camerapage{
     public scale: number = 1;
     public labelText: string;
 
-    openCam(args) {
+    openCam() {
         var milliseconds = (new Date).getTime();
         var that=this;
         requestPermissions().then(

@@ -11,6 +11,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { ProcessHTTPMsgService } from "./app/components/services/process-httpmsg.service";
 import { ButtonService } from "./app/components/services/button.service";
 import { baseURL } from "./app/components/shared/baseurl";
+import { camerapage } from "./app/components/camera-page/camera-page";
 import * as pages from 'tns-core-modules/ui/page';
 
 //import { Observable } from 'tns-core-modules/data/observable';
@@ -44,7 +45,7 @@ import { EventData } from "tns-core-modules/data/observable";
     ],
     providers: [{provide: 'baseURL', useValue: baseURL},
     ButtonService,
-    ProcessHTTPMsgService]
+    ProcessHTTPMsgService,camerapage]
 })
 class AppComponentModule {}
 const firebase = require("nativescript-plugin-firebase");

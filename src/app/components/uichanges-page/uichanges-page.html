@@ -10,14 +10,14 @@
             <GridLayout *ngSwitchCase=1>
                 <StackLayout >
                     <Label text="{{ button.name }}" textWrap="true"> </Label>
-                    <TextField class="input" hint="{{ button.name }}" color="orangered" backgroundColor="white"></TextField>
+                    <TextField  color="orangered" backgroundColor="white"></TextField>
                 </StackLayout>
             </GridLayout>
 
             <GridLayout *ngSwitchCase=2>
                 <StackLayout >
-                    <Label text="{{ button.name }}" textWrap="true"> </Label>
-                    <Button class="btn btn-primary" text="Camera" (ontap)="picture" ></Button>
+                    <Label text="{{ button.name }}" textWrap="true" > </Label>
+                    <Button class="btn btn-primary" text="Camera" (tap)="onTap()" ></Button>
                 </StackLayout>
             </GridLayout>
 
